@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const [write, setWrite] = useState('');
+const [write, setWrite] = useState('d');
 
 function handleClick(e) {
   e.preventDefault();
