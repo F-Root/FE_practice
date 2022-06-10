@@ -5,9 +5,7 @@ import Write from './write';
 const Section = () => {
   return (
     <>
-      <ol>
-        <List name='Root' />
-      </ol>
+      <List name='Root' />
       <Write />
     </>
   );
