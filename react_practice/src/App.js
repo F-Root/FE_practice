@@ -2,6 +2,7 @@
 // import './App.css';
 import Section from './components/section';
 import styled from 'styled-components';
+import { BroserRouter, BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function Header() {
   return (
@@ -21,11 +22,13 @@ function Footer() {
 
 function App() {
   return (
-    <div className='App'>
-      <Header></Header>
-      <Section />
-      <Footer></Footer>
-    </div>
+    <BrowserRouter>
+      <div className='App'>
+        <Header></Header>
+        <Section />
+        <Footer></Footer>
+      </div>
+    </BrowserRouter>
   );
 }
 
