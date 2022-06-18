@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 import Section from './components/section';
+import styled from 'styled-components';
 
 function Header() {
   return (
@@ -29,3 +30,13 @@ function App() {
 }
 
 export default App;
+
+const StyledHeader = Header`
+  font-size: 20px;
+  color: gray;
+`;
+
+const StyledFooter = Footer`
+  font-size: 16px;
+  color: gray;
+`;
