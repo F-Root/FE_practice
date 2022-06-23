@@ -1,45 +1,21 @@
-// import logo from './logo.svg';
-// import './App.css';
-import Section from './components/section';
-import styled from 'styled-components';
-import { BroserRouter, BrowserRouter, Route, Switch } from 'react-router-dom';
-
-function Header() {
+const App = () => {
   return (
-    <header>
-      <h1>Hello</h1>
-    </header>
+    <div>
+      <p>안녕하세요, 저는</p>
+      <Name checked='true' name='Foori' />
+      <p>입니다</p>
+    </div>
   );
-}
+};
 
-function Footer() {
+//Name Component
+const Name = (props) => {
+  console.log(props);
   return (
-    <footer>
-      <h6>Bye</h6>
-    </footer>
+    <div>
+      <p>Foori</p>
+    </div>
   );
-}
-
-function App() {
-  return (
-    <BrowserRouter>
-      <div className='App'>
-        <Header></Header>
-        <Section />
-        <Footer></Footer>
-      </div>
-    </BrowserRouter>
-  );
-}
+};
 
 export default App;
-
-const StyledHeader = Header`
-  font-size: 20px;
-  color: gray;
-`;
-
-const StyledFooter = Footer`
-  font-size: 16px;
-  color: gray;
-`;
